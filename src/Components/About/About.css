@@ -1,0 +1,9 @@
+
+.about-one, .about-three{
+    background-color: transparent;
+    background-image: radial-gradient(at center right,#7590f341 17%,#4268f000 76%);
+    transition: background .3s,border-radius .3s,opacity .3s;
+}
+
+
+

@@ -1,0 +1,65 @@
+@tailwind components;
+
+@layer components{
+    .home{
+        @apply grid font-sans row-auto h-screen ;
+        background: linear-gradient(to bottom,#cfd9ff,#ffffff);
+    }
+
+
+    
+
+
+
+    /* animation */
+@keyframes sliderShape {
+    0% {
+        border-radius: 62% 47% 82% 35%/45% 45% 80% 66%;
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        border-radius: 30% 75% 20% 70%/80% 40% 60% 20%;
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        border-radius: 62% 47% 82% 35%/45% 45% 80% 66%;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.shape1 {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    margin-right: 80px;
+    border-radius: 62% 47% 82% 35%/45% 45% 70% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 7s linear infinite;
+    -webkit-animation: sliderShape 5s linear infinite;
+}
+.shape2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 62% 47% 82% 35%/45% 45% 70% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    -webkit-animation: sliderShape 7s linear infinite;
+    rotate: 180deg;
+}
+
+
+}
+
+
+
+
+.mask-image {
+    mask: url('https://www.ombrulla.com/images/home/mask-banner.png') no-repeat center;
+    mask-size: 23rem;
+    -webkit-mask: url('https://www.ombrulla.com/images/home/mask-banner.png') no-repeat center;    
+    -webkit-mask-size: 23rem;
+  
+}
